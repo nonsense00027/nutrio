@@ -12,8 +12,7 @@ export const getIBW = (height, country) => {
   let ibw = height - 100;
 
   if (country === "PHL") {
-    let percentage = ibw * 0.9;
-    ibw = ibw - percentage;
+    ibw = ibw * 0.9;
   }
 
   return ibw;
@@ -34,8 +33,9 @@ export const getPAL = (lifestyle) => {
 
 export const getTER = (height, country, lifestyle) => {
   let ibw = getIBW(height, country);
+  console.log("IBW", ibw);
 
   let ter = ibw * getPAL(lifestyle);
 
-  return ter;
+  return parseInt(ter);
 };
