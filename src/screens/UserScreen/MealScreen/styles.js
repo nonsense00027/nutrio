@@ -6,6 +6,7 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     paddingHorizontal: 20,
+    paddingBottom: 90,
   },
   meal__header: {
     marginTop: 20,

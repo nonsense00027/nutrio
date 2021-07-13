@@ -28,6 +28,7 @@ export default function Suggested() {
           )}
           data={data}
           horizontal={true}
+          showsHorizontalScrollIndicator={false}
           keyExtractor={(item) => item.id.toString()}
           renderItem={renderItem}
         />
