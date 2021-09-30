@@ -7,6 +7,12 @@ import Height from "../screens/SetupScreen/Height";
 import Weight from "../screens/SetupScreen/Weight";
 import Semester from "../screens/SetupScreen/Semester";
 import Lifestyle from "../screens/SetupScreen/Lifestyle";
+import Information from "../screens/SetupScreen/Information";
+import Bmi from "../screens/SetupScreen/SubjectiveData/Bmi";
+import Reduce from "../screens/SetupScreen/SubjectiveData/Reduce";
+import Intake from "../screens/SetupScreen/SubjectiveData/Intake";
+import Severly from "../screens/SetupScreen/SubjectiveData/Severly";
+import Objective from "../screens/SetupScreen/Objective";
 
 const Stack = createStackNavigator();
 
@@ -22,13 +28,19 @@ export const SetupRoute = ({}) => {
             },
             animationEnabled: false,
           }}
-          initialRouteName="Age"
+          initialRouteName="Information"
         >
-          <Stack.Screen name="Age" component={Age} />
+          <Stack.Screen name="Information" component={Information} />
+          <Stack.Screen name="Bmi" component={Bmi} />
+          <Stack.Screen name="Reduce" component={Reduce} />
+          <Stack.Screen name="Intake" component={Intake} />
+          <Stack.Screen name="Severly" component={Severly} />
+          <Stack.Screen name="Objective" component={Objective} />
+          {/* <Stack.Screen name="Age" component={Age} />
           <Stack.Screen name="Height" component={Height} />
           <Stack.Screen name="Weight" component={Weight} />
           <Stack.Screen name="Semester" component={Semester} />
-          <Stack.Screen name="Lifestyle" component={Lifestyle} />
+          <Stack.Screen name="Lifestyle" component={Lifestyle} /> */}
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>

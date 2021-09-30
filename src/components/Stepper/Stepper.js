@@ -7,6 +7,7 @@ export default function Stepper({ max, active }) {
     <View style={styles.stepper}>
       {Array.from(Array(active).keys()).map((item) => (
         <View
+          key={item}
           style={{
             height: 3,
             flex: 1,
@@ -17,6 +18,7 @@ export default function Stepper({ max, active }) {
       ))}
       {Array.from(Array(max - active).keys()).map((item) => (
         <View
+          key={item}
           style={{
             height: 3,
             flex: 1,

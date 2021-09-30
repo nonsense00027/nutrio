@@ -1,5 +1,11 @@
 export const collectIdsAndDocs = (doc) => ({ ...doc.data(), id: doc.id });
 
+export const hasBlank = (data) => {
+  console.log(data);
+  const lengths = data.map((item) => item.length);
+  return lengths.includes(0);
+};
+
 export const getBMI = (weight, height) => {
   let heightInCm = height * 0.01;
   let finalHeight = heightInCm * heightInCm;

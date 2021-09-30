@@ -56,7 +56,7 @@ export default function Semester({ navigation, route }) {
               </Text>
               <Text
                 style={
-                  semester2424 === item.id
+                  semester === item.id
                     ? styles.semester__cardTypeActive
                     : styles.semester__cardType
                 }

@@ -15,12 +15,12 @@ const data = [
     name: "sample",
   },
 ];
-export default function Suggested() {
+export default function Diets() {
   const renderItem = ({ item }) => <View style={styles.suggested__card}></View>;
 
   return (
     <View style={styles.suggested}>
-      <Text style={styles.title}>Suggested for you</Text>
+      <Text style={styles.title}>Know more about different diets</Text>
       <View style={styles.suggested__lists}>
         <FlatList
           ItemSeparatorComponent={() => (

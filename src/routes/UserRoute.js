@@ -20,6 +20,7 @@ export const UserRoute = ({}) => {
   return (
     <NavigationContainer>
       <Tabs.Navigator
+        initialRouteName="Collab"
         tabBarOptions={{
           activeTintColor: Colors.primary,
 

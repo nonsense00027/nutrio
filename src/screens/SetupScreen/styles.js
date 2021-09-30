@@ -18,6 +18,49 @@ export default StyleSheet.create({
     textAlign: "center",
   },
 
+  textInput__label: {
+    marginLeft: 2,
+  },
+
+  textInput: {
+    borderColor: "lightgray",
+    borderWidth: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    borderRadius: 5,
+    marginHorizontal: 2,
+    marginTop: 5,
+  },
+
+  row: {
+    flexDirection: "row",
+    paddingVertical: 5,
+  },
+
+  col: {
+    flex: 1,
+  },
+
+  // INFORMATION
+  information: {
+    paddingHorizontal: 20,
+  },
+
+  information__submitButton: {
+    backgroundColor: Colors.primary,
+    marginVertical: 10,
+    paddingVertical: 10,
+    zIndex: 2,
+  },
+
+  information__submitButtonLabel: {
+    textAlign: "center",
+    textTransform: "uppercase",
+    color: "#fff",
+    fontWeight: "bold",
+    // fontSize: 16,
+  },
+
   // AGE
 
   age__input: {
